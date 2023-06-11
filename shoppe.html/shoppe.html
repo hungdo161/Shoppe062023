@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map">
     <link rel="stylesheet" href="../shoppe.css/base.css">
     <link rel="stylesheet" href="../gridLibary/grid.css">
-    <link rel="stylesheet" href="../shoppe.css/main.css">
+    <link rel="stylesheet" href="../shoppe.css/header.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
@@ -23,7 +23,19 @@
                     <ul class="header_nav-contact row l-6">
                         <li class="header_nav-contact-item hoverStore"><a href="">Kênh Người Bán</a></li>
                         <li class="header_nav-contact-item hoverStore"><a href="">Trở thành người bán Shoppe</a></li>
-                        <li class="header_nav-contact-item"><span class="shoppe_qr">Tải ứng dụng</span></li>
+                        <li class="header_nav-contact-item header_nav-contact-item-qrCode"><span class="shoppe_qr">Tải ứng dụng</span>
+                            <!-- Header QR code -->
+                            <div class="download_Wraper">
+                                <div class="header_qrCode">
+                                    <img src="../shoppe.img/shoppeQRCode.png" alt="" class="header_qrCode-img">
+                                </div>
+                                <div class="header_download_app row">
+                                    <div class="header_download_app-item l-6"><img src="../shoppe.img/appStore.png" alt="App Store" class="header_download_app-store"> </div>
+                                    <div class="header_download_app-item l-6"><img src="../shoppe.img/googlePlay.png" alt="App Store" class="header_download_google-store"> </div>
+                                    <div class="header_download_app-item l-6"><img src="../shoppe.img/appGallery.png" alt="App Store" class="header_download_app-gallery"> </div>
+                                </div>
+                            </div>
+                        </li>
                         <li class="header_nav-contact-item">
                             <span>kết Nối
                                 <a class="header_nav-icon-fb" href=""><i class="fa-brands fa-facebook"></i></a>
@@ -33,6 +45,26 @@
                     <div class="header_nav-support row l-6">
                         <div class="header_nav-notify">
                             <span><i class="fa-solid fa-bell header_nav-icon"></i> Thông báo</span>
+                            <div class="header_nav-notify-wraper">
+                                <div class="header_nav-notify-confirm">
+                                    <img class="header_nav-notify-confirm-img" src="../shoppe.img/registerconfirm.png" alt="Confirm">
+                                </div>
+                                <div class="header_nav-notify-confirm-message" >
+                                    <span>
+                                        Đăng nhập để xem thông báo
+                                    </span>
+                                </div>
+                                <div class="header_nav-notify-info row">
+                                    <div class="header_nav-notify-register l-6">
+                                        Đăng Ký
+                                    </div>
+                                    <div class="header_nav-notify-login l-6">
+                                        Đăng Nhập
+                                    </div>
+                                </div>
+
+                            </div>
+
                         </div>
                         <div class="header_nav-support-item">
                             <span><i class="fa-solid fa-circle-question header_nav-icon"></i> Hỗ trợ</span>
@@ -43,6 +75,10 @@
                                 Tiếng việt
                                 <i class="fa-solid fa-angle-down header_nav-icon header_nav-icon-down"></i>
                             </span>
+                            <div class="header_nav-language-wraper">
+                                <div class="header_nav-language-vietnamse"> <a class="vietnamse" href="">Tiếng Việt</a></div>
+                                <div class="header_nav-language-englist"><a class="enlish" href="">English</a></div>
+                            </div>
                         </div>
                         <div class="header_nav-support-register">
                             <span>Đăng Ký</span>
@@ -70,7 +106,7 @@
                         <div class="header_search-suggest">
                             <div class="header_search-suggest-item"><a href="#">Yamaha XSR 155</a></div>
                             <div class="header_search-suggest-item"><a href="#">MT15V3</a></div>
-                            <div class="header_search-suggest-item"><a href="#">Rebel300</a></div>
+                            <div class="header_search-suggest-item"><a href="#">Rebel 300</a></div>
                             <div class="header_search-suggest-item"><a href="#">Rebel 500</a></div>
                             <div class="header_search-suggest-item"><a href="#">Rebel 700</a></div>
                             <div class="header_search-suggest-item"><a href="#">Ducati 1000</a></div>
@@ -80,6 +116,15 @@
                     </div>
                     <div class="header_search-logo-cart">
                         <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                        <div class="header_search-cart-wraper">
+                            <div class="header_search-cart-item"></div>
+                            <div class="header_search-cart-noItem">
+                                <div class="cart-noItem-img">
+                                    <img src="../shoppe.img/noItemCart.png" alt="Not Item">
+                                </div>
+                                <span class="cart_noItem-message">Chưa có sản phẩm nào!</span>
+                            </div>
+                        </div>
                     </div>
     
                 </div>
@@ -87,5 +132,51 @@
             </div>
         </div>
     </div>
+    <!-- modal layout -->
+    <div class="modal">
+        <div class="modal_overlay"></div>
+        <div class="modal_body">
+            <div class="modal_inner">
+                <!-- Login modal  -->
+                <div class="login_modal">
+                    <div class="login_modal-container">
+                        <div class="login_modal-header">
+                            <div class="login_modal-register active">Đăng Ký</div>
+                            <div class="login_modal-login unactive">Đăng nhập</div>
+                        </div>
+                        <div class="login_modal-content">
+                            <input type="number" class="register_number" placeholder="Số điện thoại">
+                            <div class="register_authentication">
+                                <input type="number" class="register_authentication-input" placeholder="Nhập mã ngẫu nhiên/mã hiển thị ở bên phải">
+                                <div class="register_authentication-number">39FB8</div>
+                            </div>
+                            <div class="register_verification">
+                                <input type="number" class="register_verification-inputNumber" placeholder="Mã xác minh">
+                                <div class="register_send-verifyNumber">Gửi Mã xác minh</div>
+                            </div>
+                            <span class="register-confirm-message">
+                                Bằng việc đã ký, bạn đồng ý với shoppe về 
+                                <a href="">Điều khoản dịch vụ</a>
+                                 & 
+                                 <a href="">Chính sách bảo mật</a>.
+                            </span>
+                            <div class="register-confirm-button">
+                                <div class="register-confirm-back">Trở Lại</div>
+                                <div class="register-confirm-Register">Đăng Ký</div>
+                            </div>                            
+                        </div>
+
+                        <div class="modal_social-contact row">
+                            <div class="facebook-contact l-6"><i class="fa-brands fa-square-facebook"></i> Kết nối với Facebook</div>
+                            <div class="google-contact l-6"><i class="fa-brands fa-google"></i> Kết nối với google</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+
 </body>
 </html>
