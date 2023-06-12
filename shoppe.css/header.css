@@ -11,7 +11,7 @@
     top: 0;
     right: 0;
     left: 0;
-    z-index: 5;
+    z-index: 2 ;
 }
 
 .header_nav {
@@ -90,7 +90,7 @@
 }
 
 .header_qrCode img {
-    background-color: var(--white-color);
+    background-color: var(--background-color);
     width: 14rem;
     padding: 2px;
     
@@ -149,7 +149,7 @@
 .header_nav-support-language:hover,
 .header_nav-support-register:hover,
 .header_nav-support-login:hover {
-    opacity: 0.8;
+    opacity: 1;
 }
 
 /* header-nav-notification */
@@ -235,6 +235,7 @@
 
 .header_nav-support-language:hover .header_nav-language-wraper {
     display: block;
+    opacity: 1;
 }
 
 .header_nav-language-wraper {
@@ -242,7 +243,7 @@
     right: 0;
     top: 22px;
     width: 200px;
-    background-color: var(--white-color);
+    background-color: var(--background-color);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: none;
     padding: 4px 0;
@@ -352,7 +353,7 @@
 
 
 .header_search-info {
-    background-color: var(--white-color);
+    background-color: var(--background-color);
     display: flex;
     width: 100%;
 }
@@ -388,7 +389,7 @@
 }
 
 .header_search-btn:hover,
-.header_search-logo-cart:hover,
+.header_search-logo-cart:hover i,
 .shopee-svg-icon:hover,
 .header_search-suggest-item:hover {
     opacity: 0.8;
@@ -425,7 +426,7 @@
     min-height: 240px;
     top: 28px;
     right: 0;
-    background-color: var(--white-color);
+    background-color: var(--background-color);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: none;
 }
@@ -480,3 +481,168 @@
 
 /* login modal */
 
+.login_modal {
+    min-width: 450px;
+}
+
+.login_modal-container {
+    background-color: var(--white-color);
+}
+
+.login_modal-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 10px 20px;
+}
+
+.login_modal-register,
+.login_modal-login {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary-color);
+    padding: 10px 24px;
+    border-radius: 5px;
+}
+
+.login_modal-register:hover,
+.login_modal-login:hover {
+    color: var(--white-color);
+    cursor: pointer;
+    background-color: var(--primary-color);
+}
+
+.login_modal-register.active,
+.login_modal-login.active {
+    background-color: var(--white-color);
+    color: var(--text-color);
+    font-size: 22px;
+}
+
+.login_modal-content {
+    margin: 10px 0;
+    padding: 10px 20px;
+
+}
+
+.register_number,
+.register_authentication,
+.register_verification {
+    margin:8px 0 ;
+    line-height: 38px;
+    border-radius: 4px;
+    font-size: 13px;
+    width: 100%;
+}
+
+.register_number {
+    border: 2px solid #000;
+    padding: 0px 15px;
+}
+
+.register_verification,
+.register_authentication {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: 2px solid #000;
+}
+
+.register_verification {
+    margin-top: 15px;
+}
+.register_verification-inputNumber,
+.register_authentication-input {
+    padding: 0px 15px;
+    flex: 1;
+    border: none;
+    outline: none;
+}
+
+.register_authentication-number {
+    width: 25%;
+    font-weight: 500;
+    border-left: 2px solid #000;
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+}
+
+.register_send-verifyNumber {
+    border-left: 2px solid #000;
+    font-size: 13px;
+    text-align: center;
+    padding: 0 5px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.register_send-verifyNumber:hover {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+.register-confirm {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.register-confirm-message {
+    font-size: 14px;
+    line-height: 1.6rem;
+    padding: 0 24px;
+
+}
+
+.register-confirm-message a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.register-confirm-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.register-confirm-back,
+.register-confirm-Register {
+    text-transform: uppercase;
+    padding: 12px 36px;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--text-color);
+    border-radius: 4px;
+}
+
+.register-confirm-back:hover,
+.register-confirm-Register:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.modal_social-contact {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+}
+
+.google-contact,
+.facebook-contact {
+    margin: 20px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.google-contact {
+    background-color: #3B5998;
+}
+
+
+.google-contact i,
+.facebook-contact i {
+    padding-right:40px ;
+}
