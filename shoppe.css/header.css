@@ -481,23 +481,25 @@
 
 /* login modal */
 
-.login_modal {
-    min-width: 450px;
+.register_modal {
+    min-width: 400px;
+    display: none;
 }
-
-.login_modal-container {
+.login_modal-container,
+.register_modal-container {
     background-color: var(--white-color);
 }
 
-.login_modal-header {
+.login_modal-header,
+.register_modal-header {
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
     padding: 10px 20px;
 }
 
-.login_modal-register,
-.login_modal-login {
+.register_modal-register,
+.register_modal-login {
     font-size: 16px;
     font-weight: 500;
     color: var(--primary-color);
@@ -505,21 +507,22 @@
     border-radius: 5px;
 }
 
-.login_modal-register:hover,
-.login_modal-login:hover {
+.register_modal-register:hover,
+.register_modal-login:hover {
     color: var(--white-color);
     cursor: pointer;
     background-color: var(--primary-color);
 }
 
-.login_modal-register.active,
-.login_modal-login.active {
+.register_modal-register.active,
+.register_modal-login.active {
     background-color: var(--white-color);
     color: var(--text-color);
     font-size: 22px;
 }
 
-.login_modal-content {
+.login_modal-content,
+.register_modal-content {
     margin: 10px 0;
     padding: 10px 20px;
 
@@ -606,7 +609,8 @@
     margin-top: 80px;
     margin-bottom: 20px;
 }
-
+.login-confirm-back,
+.login-confirm-login,
 .register-confirm-back,
 .register-confirm-Register {
     text-transform: uppercase;
@@ -617,6 +621,8 @@
     border-radius: 4px;
 }
 
+.login-confirm-back:hover,
+.login-confirm-login:hover,
 .register-confirm-back:hover,
 .register-confirm-Register:hover {
     background-color: var(--primary-color);
@@ -629,20 +635,105 @@
     display: flex;
     justify-content: center;
 }
-
+.sms-contact,
 .google-contact,
 .facebook-contact {
+    line-height: 22px;
     margin: 20px;
     font-size: 20px;
-    padding: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+}
+.sms-contact:hover,
+.google-contact:hover,
+.facebook-contact:hover {
+    opacity: 0.9;
+    border: 0.1px solid transparent;
 }
 
 .google-contact {
+    background-color: #ccc;
+    margin-left: 5px;
+}
+
+.facebook-contact {
     background-color: #3B5998;
+    margin-right: 5px;
 }
 
 
 .google-contact i,
 .facebook-contact i {
     padding-right:40px ;
+    color: var(--white-color);
+    font-size: 24px;
+}
+
+.google-contact i {
+    color: rgb(182, 157, 48);
+}
+
+
+/* login modal */
+
+.login_modal {
+    min-width: 400px;
+    display: block;
+}
+
+.login_modal-infomation {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.login_modal-name,
+.login_modal-password {
+    font-size: 14px;
+    line-height: 32px;
+    padding: 4px 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+
+.sms-contact {
+    background-color: rgb(75, 209, 75);
+    padding-right: 50px ;
+    margin-right: 5px ;
+}
+
+.sms-contact i {
+     margin-right: 25px;
+     color: var(--white-color);
+}
+
+.login_modal-fb-contact {
+    margin-left: 5px;
+}
+
+.login_modal-support {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login_modal-forgotPassword,
+.login_modal-help {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 4px 8px;
+    font-weight: 500;
+}
+
+.login_modal-forgotPassword a,
+.login_modal-help a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.login_modal-forgotPassword:hover a,
+.login_modal-help:hover a {
+    color: var(--primary-color);
 }

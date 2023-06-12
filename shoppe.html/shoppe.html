@@ -55,7 +55,7 @@
                                     </span>
                                 </div>
                                 <div class="header_nav-notify-info row">
-                                    <div class="header_nav-notify-register l-6">
+                                    <div class="header_nav-notify-register js-header_nav-notify-register l-6">
                                         Đăng Ký
                                     </div>
                                     <div class="header_nav-notify-login l-6">
@@ -76,7 +76,7 @@
                                 <i class="fa-solid fa-angle-down header_nav-icon header_nav-icon-down"></i>
                             </span>
                             <div class="header_nav-language-wraper">
-                                <div class="header_nav-language-vietnamse"> <a class="vietnamse" href="">Tiếng Việt</a></div>
+                                <div class="header_nav-language-vietnamse"><a class="vietnamse" href="">Tiếng Việt</a></div>
                                 <div class="header_nav-language-englist"><a class="enlish" href="">English</a></div>
                             </div>
                         </div>
@@ -137,14 +137,14 @@
         <div class="modal_overlay"></div>
         <div class="modal_body">
             <div class="modal_inner">
-                <!-- Login modal  -->
-                <div class="login_modal">
-                    <div class="login_modal-container">
-                        <div class="login_modal-header">
-                            <div class="login_modal-register active ">Đăng Ký</div>
-                            <div class="login_modal-login">Đăng nhập</div>
+                <!-- register modal  -->
+                <div class="register_modal">
+                    <div class="register_modal-container">
+                        <div class="register_modal-header">
+                            <div class="register_modal-register active ">Đăng Ký</div>
+                            <div class="register_modal-login">Đăng nhập</div>
                         </div>
-                        <div class="login_modal-content">
+                        <div class="register_modal-content">
                             <input type="text" inputmode="numeric" class="register_number" placeholder="Số điện thoại">
                             <div class="register_authentication">
                                 <input type="text" inputmode="numeric" class="register_authentication-input" placeholder="Nhập mã ngẫu nhiên/mã hiển thị ở bên phải">
@@ -172,6 +172,34 @@
                             <div class="facebook-contact"><i class="fa-brands fa-square-facebook"></i> Kết nối với Facebook</div>
                             <div class="google-contact"><i class="fa-brands fa-google"></i> Kết nối với google</div>
                         </div>
+                    </div>
+                </div>
+                <!-- login modal -->
+                <div class="login_modal">
+                    <div class="login_modal-container">
+                        <div class="login_modal-header">
+                            <div class="register_modal-login  active">Đăng nhập</div> 
+                            <div class="register_modal-register ">Đăng Ký</div>
+                        </div>
+                        <div class="login_modal-content">
+                            <div class="login_modal-infomation">
+                                <input type="text" class="login_modal-name" id="name" name="name" placeholder="Email/Số Điện Thoại/Tên Đăng Nhập"  required minlength="4" maxlength="8" size="10">
+                                <input type="password" class="login_modal-password" id="password" name="password" placeholder="Mật Khẩu"  required minlength="4" maxlength="8" size="10">
+                            </div>
+                            <div class="login_modal-support">
+                                <div class="login_modal-forgotPassword"><a href="">Quên Mật Khẩu</a></div>
+                                <div class="login_modal-help"><a href="">Cần trợ giúp?</a></div>
+                            </div>
+                            <div class="register-confirm-button">
+                                <div class="login-confirm-back">Trở Lại</div>
+                                <div class="login-confirm-login active">Đăng nhập</div>
+                            </div>
+                         </div>
+                         <div class="modal_social-contact">
+                            <div class="sms-contact"><i class="fa-solid fa-comment-sms"></i>SMS</div>
+                            <div class="facebook-contact login_modal-fb-contact"><i class="fa-brands fa-square-facebook"></i>Facebook</div>
+                            <div class="google-contact"><i class="fa-brands fa-google"></i>Google</div>
+                         </div>
                     </div>
                 </div>
             </div>
