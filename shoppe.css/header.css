@@ -480,11 +480,21 @@
 
 
 /* login modal */
+.modal {
+    display: none;
+}
 
+.login_modal,
 .register_modal {
     min-width: 400px;
     display: none;
 }
+
+
+.open {
+    display: flex;
+}
+
 .login_modal-container,
 .register_modal-container {
     background-color: var(--white-color);
