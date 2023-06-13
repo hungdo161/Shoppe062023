@@ -133,79 +133,86 @@
         </div>
     </div>
     <!-- modal layout -->
-    <div class="modal">
-        <div class="modal_overlay"></div>
-        <div class="modal_body">
-            <div class="modal_inner">
-                <!-- register modal  -->
-                <div class="register_modal js-register_modal">
-                    <div class="register_modal-container">
-                        <div class="register_modal-header">
-                            <div class="register_modal-register active ">Đăng Ký</div>
-                            <div class="register_modal-login">Đăng nhập</div>
-                        </div>
-                        <div class="register_modal-content">
-                            <input type="text" inputmode="numeric" class="register_number" placeholder="Số điện thoại">
-                            <div class="register_authentication">
-                                <input type="text" inputmode="numeric" class="register_authentication-input" placeholder="Nhập mã ngẫu nhiên/mã hiển thị ở bên phải">
-                                <div class="register_authentication-number">39FB8</div>
+    <div class="modal js-register_modal-wraper">
+        <div class="modal_overlay register_modal-overlay"></div>
+            <div class="modal_body register_modal-body">
+                <div class="modal_inner register_modal-inner">
+                    <!-- register modal  -->
+                    <div class="register_modal js-register_modal">
+                        <div class="register_modal-container">
+                            <div class="register_modal-header">
+                                <div class="register_modal-register active ">Đăng Ký</div>
+                                <div class="register_modal-login js-register_modal-login">Đăng nhập</div>
                             </div>
-                            <div class="register_verification">
-                                <input type="text" inputmode="numeric" class="register_verification-inputNumber" placeholder="Mã xác minh">
-                                <div class="register_send-verifyNumber">Gửi Mã xác minh</div>
+                            <div class="register_modal-content">
+                                <input type="text" inputmode="numeric" class="register_number" placeholder="Số điện thoại">
+                                <div class="register_authentication">
+                                    <input type="text" inputmode="numeric" class="register_authentication-input" placeholder="Nhập mã ngẫu nhiên/mã hiển thị ở bên phải">
+                                    <div class="register_authentication-number">39FB8</div>
+                                </div>
+                                <div class="register_verification">
+                                    <input type="text" inputmode="numeric" class="register_verification-inputNumber" placeholder="Mã xác minh">
+                                    <div class="register_send-verifyNumber">Gửi Mã xác minh</div>
+                                </div>
+                                <div class="register-confirm">
+                                    <span class="register-confirm-message">
+                                        Bằng việc đã ký, bạn đồng ý với shoppe về 
+                                        <a href="">Điều khoản dịch vụ</a>
+                                        & 
+                                        <a href="">Chính sách bảo mật</a>.
+                                    </span>
+                                </div>
+                                <div class="register-confirm-button">
+                                    <div class="register-confirm-back js-register-confirm-back">Trở Lại</div>
+                                    <button type="submit" class="register-confirm-Register">Đăng Ký</button>
+                                </div>                            
                             </div>
-                            <div class="register-confirm">
-                                <span class="register-confirm-message">
-                                    Bằng việc đã ký, bạn đồng ý với shoppe về 
-                                    <a href="">Điều khoản dịch vụ</a>
-                                     & 
-                                     <a href="">Chính sách bảo mật</a>.
-                                </span>
-                            </div>
-                            <div class="register-confirm-button">
-                                <div class="register-confirm-back">Trở Lại</div>
-                                <div class="register-confirm-Register active">Đăng Ký</div>
-                            </div>                            
-                        </div>
 
-                        <div class="modal_social-contact">
-                            <div class="facebook-contact"><i class="fa-brands fa-square-facebook"></i> Kết nối với Facebook</div>
-                            <div class="google-contact"><i class="fa-brands fa-google"></i> Kết nối với google</div>
+                            <div class="modal_social-contact">
+                                <div class="facebook-contact"><i class="fa-brands fa-square-facebook"></i> Kết nối với Facebook</div>
+                                <div class="google-contact"><i class="fa-brands fa-google"></i> Kết nối với google</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- login modal -->
-                <div class="login_modal">
-                    <div class="login_modal-container">
-                        <div class="login_modal-header">
-                            <div class="register_modal-login  active">Đăng nhập</div> 
-                            <div class="register_modal-register ">Đăng Ký</div>
-                        </div>
-                        <div class="login_modal-content">
-                            <div class="login_modal-infomation">
-                                <input type="text" class="login_modal-name" id="name" name="name" placeholder="Email/Số Điện Thoại/Tên Đăng Nhập"  required minlength="4" maxlength="8" size="10">
-                                <input type="password" class="login_modal-password" id="password" name="password" placeholder="Mật Khẩu"  required minlength="4" maxlength="8" size="10">
-                            </div>
-                            <div class="login_modal-support">
-                                <div class="login_modal-forgotPassword"><a href="">Quên Mật Khẩu</a></div>
-                                <div class="login_modal-help"><a href="">Cần trợ giúp?</a></div>
-                            </div>
-                            <div class="register-confirm-button">
-                                <div class="login-confirm-back">Trở Lại</div>
-                                <div class="login-confirm-login active">Đăng nhập</div>
-                            </div>
-                         </div>
-                         <div class="modal_social-contact">
-                            <div class="sms-contact"><i class="fa-solid fa-comment-sms"></i>SMS</div>
-                            <div class="facebook-contact login_modal-fb-contact"><i class="fa-brands fa-square-facebook"></i>Facebook</div>
-                            <div class="google-contact"><i class="fa-brands fa-google"></i>Google</div>
-                         </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
-        
+    </div>
+
+
+    <div class="modal js-login_modal-wraper">
+        <div class="modal_overlay login_modal-overlay"></div>
+            <div class="modal_body login_modal-body">
+                <div class="modal_inner login_modal-inner">
+                    <!-- login modal -->
+                    <div class="login_modal js-login_modal">
+                        <div class="login_modal-container">
+                            <div class="login_modal-header">
+                                <div class="loin_modal-login active">Đăng nhập</div> 
+                                <div class="login_modal-register js-login_modal-register ">Đăng Ký</div>
+                            </div>
+                            <div class="login_modal-content">
+                                <div class="login_modal-infomation">
+                                    <input type="text" class="login_modal-name" id="name" name="name" placeholder="Email/Số Điện Thoại/Tên Đăng Nhập"  required minlength="4" maxlength="8" size="10">
+                                    <input type="password" class="login_modal-password" id="password" name="password" placeholder="Mật Khẩu"  required minlength="4" maxlength="8" size="10">
+                                </div>
+                                <div class="login_modal-support">
+                                    <div class="login_modal-forgotPassword"><a href="">Quên Mật Khẩu</a></div>
+                                    <div class="login_modal-help"><a href="">Cần trợ giúp?</a></div>
+                                </div>
+                                <div class="register-confirm-button">
+                                    <div class="login-confirm-back js-login-confirm-back">Trở Lại</div>
+                                    <button type="submit" class="login-confirm-login">Đăng nhập</button>
+                                </div>
+                            </div>
+                            <div class="modal_social-contact">
+                                <div class="sms-contact"><i class="fa-solid fa-comment-sms"></i>SMS</div>
+                                <div class="facebook-contact login_modal-fb-contact"><i class="fa-brands fa-square-facebook"></i>Facebook</div>
+                                <div class="google-contact"><i class="fa-brands fa-google"></i>Google</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
     </div>
     <script src="../shoppe.js/shoppe.js"></script>
 </body>

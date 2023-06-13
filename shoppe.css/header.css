@@ -508,6 +508,8 @@
     padding: 10px 20px;
 }
 
+.loin_modal-login,
+.login_modal-register,
 .register_modal-register,
 .register_modal-login {
     font-size: 16px;
@@ -518,12 +520,16 @@
 }
 
 .register_modal-register:hover,
-.register_modal-login:hover {
+.register_modal-login:hover,
+.loin_modal-login:hover,
+.login_modal-register:hover {
     color: var(--white-color);
     cursor: pointer;
     background-color: var(--primary-color);
 }
 
+.login_modal-register.active,
+.loin_modal-login.active,
 .register_modal-register.active,
 .register_modal-login.active {
     background-color: var(--white-color);
@@ -629,6 +635,8 @@
     font-weight: 400;
     color: var(--text-color);
     border-radius: 4px;
+    border: none;
+    background-color: var(--white-color);
 }
 
 .login-confirm-back:hover,
@@ -688,10 +696,6 @@
 
 /* login modal */
 
-.login_modal {
-    min-width: 400px;
-    display: block;
-}
 
 .login_modal-infomation {
     display: flex;
