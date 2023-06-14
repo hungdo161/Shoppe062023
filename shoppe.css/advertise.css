@@ -1,0 +1,38 @@
+
+
+
+#advertise {
+    height: 1000px;
+    background-color: antiquewhite;
+}
+
+
+.advertise-about {
+    display: flex;
+}
+
+.advertise_background {
+    background-color: var(--white-color);
+    min-height: 300px;
+    margin-top: var(--header-height);
+}
+
+.advertise_main-item {
+    width: 100%;
+    margin-right: -12px;
+    margin-left: 12px;
+}
+
+
+.advertise_main-item img {
+    height: 235px;
+}
+
+.advertise_sub-item {
+    padding: 0;
+    width: 100%;
+}
+
+.advertise_sub-item img {
+    height: 115px;
+}

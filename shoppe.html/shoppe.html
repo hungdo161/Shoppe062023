@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../shoppe.css/base.css">
     <link rel="stylesheet" href="../gridLibary/grid.css">
     <link rel="stylesheet" href="../shoppe.css/header.css">
+    <link rel="stylesheet" href="../shoppe.css/advertise.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
@@ -16,7 +17,7 @@
 </head>
 <body>
     <div class="body_wraper">
-        <!-- Header section -->
+        <!-- header section -->
         <div id="header">
             <div class="header_container grid wide">
                 <div class="header_nav row">
@@ -131,10 +132,34 @@
 
             </div>
         </div>
+
+        <!--advertise Section  -->
+        <div id="advertise">
+            <div class="advertise_background">
+                <div class="advertise_content-wraper grid wide row">
+                    <div class="advertise-about row no-gutters l-12">
+                        <div class="advertise_main-item l-8 ">
+                            <img src="https://cf.shopee.vn/file/vn-50009109-dfb28a62f78371b589f75e030cd9c219_xxhdpi" alt="baby">
+
+                        </div>
+                        <div class="advertise_sub-item-wraper l-4">
+                            <div class="advertise_sub-item">
+                                <img src="https://cf.shopee.vn/file/vn-50009109-4b582caa24e4d5398952b9f0e4605fe8_xhdpi" alt="">
+                            </div>
+                            <div class="advertise_sub-item">
+                                <img src="https://cf.shopee.vn/file/vn-50009109-84a12efc203d04ea872f1ceeab38b698_xhdpi" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
     </div>
-    <!-- modal layout -->
+    <!-- modal layout Section -->
     <div class="modal js-register_modal-wraper">
-        <div class="modal_overlay register_modal-overlay"></div>
+        <div class="modal_overlay register_modal-overlay js-modal_overlay"></div>
             <div class="modal_body register_modal-body">
                 <div class="modal_inner register_modal-inner">
                     <!-- register modal  -->
@@ -180,7 +205,7 @@
 
 
     <div class="modal js-login_modal-wraper">
-        <div class="modal_overlay login_modal-overlay"></div>
+        <div class="modal_overlay login_modal-overlay js-modal_overlay"></div>
             <div class="modal_body login_modal-body">
                 <div class="modal_inner login_modal-inner">
                     <!-- login modal -->

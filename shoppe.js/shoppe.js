@@ -4,14 +4,15 @@
 const registerModalElement = document.querySelector(".js-register_modal-wraper")
 const registerElement = document.querySelector(".js-header_nav-support-register");
 const registerModal = document.querySelector(".js-register_modal");
-const closeRegisterModal = document.querySelector(".js-register-confirm-back");
+const closeRegisterModalBtn = document.querySelector(".js-register-confirm-back");
 
 // login modal
 
 const loginModalElement = document.querySelector(".js-login_modal-wraper")
 const loginElement = document.querySelector(".header_nav-support-login");
 const loginModal = document.querySelector(".js-login_modal");
-const closeLoginModal = document.querySelector(".js-login-confirm-back")
+const closeLoginModalBtn = document.querySelector(".js-login-confirm-back");
+
 
 // show register modal
 registerElement.addEventListener("click",function() {
@@ -21,11 +22,10 @@ registerElement.addEventListener("click",function() {
 
 // close register modal
 
-closeRegisterModal.addEventListener("click",function() {
+closeRegisterModalBtn.addEventListener("click",function() {
     registerModalElement.classList.remove("open");
     registerModal.classList.remove("open");
 });
-
 
 // show login modal
 
@@ -34,12 +34,37 @@ loginElement.addEventListener("click",function() {
     loginModal.classList.add("open");
 });
 
+
 // close login modal
 
-closeLoginModal.addEventListener("click",function () {
+closeLoginModalBtn.addEventListener("click",function() {
     loginModalElement.classList.remove("open");
     loginModal.classList.remove("open");
-});
+})
+
+// modal overlay click => hide modal
+
+registerModalElement.addEventListener("click",function() {
+    registerModalElement.classList.remove("open");
+    registerModal.classList.remove("open");
+})
+
+loginModalElement.addEventListener("click",function () {
+    loginModalElement.classList.remove("open");
+    loginModal.classList.remove("open");
+})
+
+// stopPropagation for modal
+
+registerModal.addEventListener("click",function(event){
+    event.stopPropagation()
+})
+
+
+loginModal.addEventListener("click",function(event){
+    event.stopPropagation()
+})
+
 
 
 // login modal and register modal convert

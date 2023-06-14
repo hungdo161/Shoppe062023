@@ -11,6 +11,8 @@
   --text-color: #333 !important;
   --primary-color: #ee4d2d !important ;
   --background-color: #fff !important;
+
+  --header-height: 134px;
 }
 
 html {
