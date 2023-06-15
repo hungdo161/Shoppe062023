@@ -18,21 +18,34 @@
 }
 
 .advertise_main-item {
-    width: 100%;
+    /* width: 100%;
     margin-right: -12px;
-    margin-left: 12px;
+    margin-left: 12px; */
+    height: 235px;
+    background-image: url(https://cf.shopee.vn/file/vn-50009109-dfb28a62f78371b589f75e030cd9c219_xxhdpi);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-
-.advertise_main-item img {
+.advertise_sub-item-wraper {
     height: 235px;
 }
 
-.advertise_sub-item {
-    padding: 0;
-    width: 100%;
+.advertise_sub-item1 {
+    height: 115px;
+    background-image: url(https://cf.shopee.vn/file/vn-50009109-4b582caa24e4d5398952b9f0e4605fe8_xhdpi);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.advertise_sub-item img {
+.advertise_main-item2 {
     height: 115px;
+    background-image: url(https://cf.shopee.vn/file/vn-50009109-84a12efc203d04ea872f1ceeab38b698_xhdpi);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+
+/* .advertise_sub-item img {
+    height: 115px;
+} */
