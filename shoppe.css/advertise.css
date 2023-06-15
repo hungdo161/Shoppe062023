@@ -7,9 +7,7 @@
 }
 
 
-.advertise-about {
-    display: flex;
-}
+
 
 .advertise_background {
     background-color: var(--white-color);
@@ -17,18 +15,61 @@
     margin-top: var(--header-height);
 }
 
+.advertise-about {
+    display: flex;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 16px;
+}
 .advertise_main-item {
-    /* width: 100%;
-    margin-right: -12px;
-    margin-left: 12px; */
+    position: relative;
     height: 235px;
     background-image: url(https://cf.shopee.vn/file/vn-50009109-dfb28a62f78371b589f75e030cd9c219_xxhdpi);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
 }
 
+.advertise_right-arrow {
+    position: absolute;
+    font-size: 40px;
+    top: 36%;
+    right: 0;
+    padding: 12px 6px;
+    background-color: rgba(0,0,0,.09);
+    color: var(--white-color);
+    display: none;
+}
+
+.advertise_left-arrow {
+    position: absolute;
+    font-size: 40px;
+    top: 36%;
+    left: 0;
+    padding: 12px 6px;
+    background-color: rgba(0,0,0,.09);
+    color: var(--white-color);
+    display: none;
+}
+
+.advertise_left-arrow:hover {
+    background-color: rgba(71, 66, 66, 0.5);
+    cursor: pointer;
+}
+
+.advertise_right-arrow:hover {
+    background-color: rgba(71, 66, 66, 0.5);
+    cursor: pointer;
+}
+
+.advertise_main-item:hover 
+.advertise_right-arrow,
+.advertise_main-item:hover 
+.advertise_left-arrow {
+    display: block;
+}
 .advertise_sub-item-wraper {
     height: 235px;
+    padding-left:5px ;
 }
 
 .advertise_sub-item1 {
@@ -38,14 +79,95 @@
     background-size: cover;
 }
 
-.advertise_main-item2 {
+.advertise_sub-item2 {
+    margin-top: 5px;
     height: 115px;
     background-image: url(https://cf.shopee.vn/file/vn-50009109-84a12efc203d04ea872f1ceeab38b698_xhdpi);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.advertise-item-wraper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px !important;
+}
 
-/* .advertise_sub-item img {
-    height: 115px;
-} */
+.advertise-item-img {
+    height: 45px;
+    width: 45px;
+    text-align: center;
+}
+
+.advertise-items {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 100px;
+}
+
+.advertise-items-content {
+    text-align: center;
+    font-size: 12px;
+    padding: 6px 4px;
+    min-height: 28px;
+
+}
+
+.advertise-item-img-1 {
+    background: url(https://cf.shopee.vn/file/e4a404283b3824c211c1549aedd28d5f_xhdpi);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.advertise-item-img-2 {
+    background: url(https://cf.shopee.vn/file/a8d76bca057ba0b117dcf8e1ef068d16_xhdpi);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.advertise-item-img-3 {
+    background: url(https://cf.shopee.vn/file/vn-50009109-11d9732a464d895d3699ca40431d0bfd_xhdpi);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.advertise-item-img-4 {
+    background: url(https://cf.shopee.vn/file/vn-50009109-852300c407c5e79bf5dc1854aa0cfeef_xhdpi);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.advertise-item-img-5 {
+    background: url(https://cf.shopee.vn/file/vn-50009109-8a387d78a7ad954ec489d3ef9abd60b4_xhdpi);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.advertise-item-img-6 {
+    background: url(https://cf.shopee.vn/file/vn-50009109-1975fb1af4ae3c22878d04f6f440b6f9_xhdpi);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.advertise-item-img-7 {
+    background: url(https://cf.shopee.vn/file/9df57ba80ca225e67c08a8a0d8cc7b85_xhdpi);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.advertise-item-img-8 {
+    background: url(https://cf.shopee.vn/file/vn-50009109-29961f92098bc9153b88332110a91c87_xhdpi);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.advertise-item-img-9 {
+    background: url(https://cf.shopee.vn/file/b3535d7e56c58c4ebe9a87672d38cc5e_xhdpi);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
