@@ -2,7 +2,6 @@
 
 
 #advertise {
-    height: 1000px;
     background-color: antiquewhite;
 }
 
@@ -117,6 +116,17 @@
 
 }
 
+.advertise-items-link {
+    text-decoration: none;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.advertise-items-link:hover {
+    border: 1px solid transparent;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
 .advertise-item-img-1 {
     background: url(https://cf.shopee.vn/file/e4a404283b3824c211c1549aedd28d5f_xhdpi);
     background-repeat: no-repeat;
@@ -169,5 +179,4 @@
     background: url(https://cf.shopee.vn/file/b3535d7e56c58c4ebe9a87672d38cc5e_xhdpi);
     background-repeat: no-repeat;
     background-size: contain;
-    
 }
