@@ -17,7 +17,7 @@
 .advertise-about {
     display: flex;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    margin-top: 16px;
+    margin-top: 20px;
 }
 .advertise_main-item {
     position: relative;
