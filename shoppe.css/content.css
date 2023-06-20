@@ -514,7 +514,129 @@
 }
 
 
+/* featured item section css */
+
+.featuredItem-section  { 
+}
+
+.featuredItem-container {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 110px;
+    background-image: url(https://cf.shopee.vn/file/sg-50009109-92e39a1bdd14ddc1593a5411251fff54);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.featuredItem-content-wraper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.featuredItem-content-items {
+    cursor: pointer;
+}
+
+.homePage_mall-wraper {
+    min-height: 500px;
+    background-color: var(--background-color);
+
+}
+
+.homePage_mall-header {
+    margin: 0;
+    width: 100%;
+    border-bottom: 1px solid rgb(245, 226, 226);
+}
+
+.homePage_mall-header-incentives {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.homePage_mall-header-incentives-items {
+    font-size: 16px;
+    line-height: 40px;
+}
+
+
+.homePage_mall-header-incentives-items a {
+    padding: 20px 0;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.homePage_mall-header-incentives-items a i {
+    color: var(--primary-color);
+    font-size: 13px;
+    padding-right:4px ;
+}
+
+
+
+.homePage_mall-header-return-icon {
+    background-color: var(--primary-color);
+    color: var(--white-color) !important;
+    padding: 4px 5px;
+    border-radius: 50%;
+    font-size: 10px !important;
+}
+
+.proctect-icon {
+
+}
+
+.homePage_mall-header-incentives-items:first-child a {
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: 18px;
+    padding-right: 20px;
+}
+
+.homePage_mall-header-separate::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 25px;
+    background-color: rgb(245, 226, 226);
+    top: 25%;
+    right: 81%;
+}
+
+.homePage_mall-header-seeAll {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+}
+
+.homePage_mall-header-seeAll a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 16px;
+    line-height: 30px;
+    padding: 10px 20px;
+    font-weight: 400;
+}
+
+.homePage_mall-header-seeAll-icon {
+    background-color: var(--primary-color);
+    color: var(--white-color) !important;
+    padding: 4px 7px;
+    border-radius: 50%;
+    font-size: 15px;
+    margin-left: 4px;
+}
 
 #footer {
     height: 5000px;
 }
+
