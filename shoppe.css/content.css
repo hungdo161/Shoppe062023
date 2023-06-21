@@ -636,6 +636,81 @@
     margin-left: 4px;
 }
 
+
+.home-page-mall-content {
+    height: 472px;
+}
+
+.home-page-mall-content-img-wraper {
+    position: relative;
+    width: 400px;
+    height: 472px;
+    padding: 10px 0 0 10px;
+}
+
+.home-page-mall-right-icon,
+.home-page-mall-left-icon {
+    position: absolute;
+    top: 45%;
+    font-size: 40px;
+    color: var(--white-color);
+    padding: 12px 6px;
+    background-color: rgba(0,0,0,.09);
+    display: none;
+    cursor: pointer;
+}
+
+.home-page-mall-right-icon:hover,
+.home-page-mall-left-icon:hover {
+    background-color: rgba(71, 66, 66, 0.5);
+}
+
+
+.home-page-mall-right-icon {
+    right: 1px;
+}
+
+.home-page-mall-left-icon {
+    left: 10px;
+}
+
+.home-page-mall-content-img-wraper:hover .home-page-mall-right-icon,
+.home-page-mall-content-img-wraper:hover .home-page-mall-left-icon {
+    display: block;
+}
+
+.home-page-mall-content-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://cf.shopee.vn/file/vn-50009109-9ef42d7e20c85e2984e93affc3b6e891);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.home-page-mall-content-items-wraper {
+    height: 50%;
+    padding: 10px;
+}
+
+.home-page-mall-content-items {
+    height: 100%;
+    width: 100%;
+}
+
+.home-page-mall-content-item-about {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.home-page-mall-content-item-img {
+    padding-top: 100%;
+    background-image: url(https://down-vn.img.susercontent.com/file/be691f1a5b5a715c933e55f7fd2d7f0b_xhdpi);
+    background-repeat: no-repeat;
+    background-size: contain; 
+}
+
 #footer {
     height: 5000px;
 }
