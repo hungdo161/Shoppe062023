@@ -53,6 +53,40 @@ html {
 }
 
 
+/* Item  zoom to*/
+
+.items-left-next,
+.items-right-next {
+    background-color: #f8f8f8;
+    padding: 8px;
+    border-radius: 50%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.items-left-next-icon,
+.items-right-next-icon {
+    font-size: 16px;
+    color: var(--primary-color);
+}
+
+.items-left-next:hover .items-left-next-icon,
+.items-right-next:hover .items-right-next-icon {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.items-left-next:hover,
+.items-right-next:hover {
+    padding: 16px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+
+
 
 /* animation Qr download CSS*/
 
