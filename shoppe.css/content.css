@@ -804,14 +804,20 @@
 
 
 .suggest_items-about {
+    margin-right:-8px ;
+    margin-left: -8px;
 }
 
 
 
 .suggest_item {
     display: flex;
-    margin-top: 10px;
     position: relative;
+    padding: 8px;
+}
+
+.suggest_item-content-wraper {
+    /* padding: 8px; */
 }
 
 .suggest_same-item-search {
@@ -828,7 +834,7 @@
     z-index: 2;
 }
 
-.suggest_item:hover {
+.suggest_item-content-wraper:hover {
     border: 1px solid var(--primary-color);
 }
 
@@ -979,14 +985,129 @@
 }
 
 .suggest_item-img {
+    position: relative;
     background-repeat: no-repeat;
     background-size: contain;
     padding-top: 100%;
 }
 
+.suggest_item-sale-voucher {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-top: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 
 .suggest_item-img1 {
     background-image: url(https://down-vn.img.susercontent.com/file/ecbe9d42374c7e50c5e6839e119cdd5e_tn);
+}
+
+
+.suggest_item-sale-voucher1 {
+    background-image: url(https://down-vn.img.susercontent.com/file/vn-50009109-b3caa005a5f005b572958880aadee5dc);
+}
+
+.suggest_item-img2 {
+    background-image: url(https://down-vn.img.susercontent.com/file/41a3a6eb048036feb7f4c6eb534c1a1a_tn);
+}
+
+
+.suggest_item-sale-voucher2 {
+    background-image: url(https://down-vn.img.susercontent.com/file/vn-50009109-00c87e7bb2af48ffe2d1474983d5f7be);
+}
+
+
+.suggest_item-img3 {
+    background-image: url(https://down-vn.img.susercontent.com/file/e8522da85e9bf088aaa7d3f069e95250_tn);
+}
+
+
+.suggest_item-sale-voucher3 {
+    background-image: url(https://down-vn.img.susercontent.com/file/vn-50009109-c7826109664ed3609b1be4cb2224a349);
+}
+
+.suggest_item-img4 {
+    background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf4xgtgqopjr75_tn);
+}
+
+
+.suggest_item-sale-voucher4 {
+    background-image: url(https://down-vn.img.susercontent.com/file/vn-50009109-c7826109664ed3609b1be4cb2224a349);
+}
+
+.suggest_item-img5 {
+    background-image: url(https://down-vn.img.susercontent.com/file/964e0beecd4ddb0b78281fb36f73e51d_tn);
+}
+
+
+.suggest_item-sale-voucher5 {
+    background-image: url(https://down-vn.img.susercontent.com/file/964e0beecd4ddb0b78281fb36f73e51d_tn);
+}
+
+.suggest_item-img6 {
+    background-image: url(	https://down-vn.img.susercontent.com/file/e66cc386528d8c5119b59cd20ccacc22_tn);
+}
+
+
+.suggest_item-sale-voucher6 {
+    background-image: url(	https://down-vn.img.susercontent.com/file/e66cc386528d8c5119b59cd20ccacc22_tn);
+}
+
+.suggest_item-img7 {
+    background-image: url(https://down-vn.img.susercontent.com/file/cn-11134211-7qukw-lh4inzmc2064d6_tn);
+}
+
+
+.suggest_item-sale-voucher7 {
+    background-image: url(https://down-vn.img.susercontent.com/file/cn-11134211-7qukw-lh4inzmc2064d6_tn);
+}
+
+.suggest_item-img8 {
+    background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lhvdawgs9c3p59_tn);
+}
+
+
+.suggest_item-sale-voucher8 {
+    background-image: url(https://down-vn.img.susercontent.com/file/vn-50009109-e57e5795819280a6535cee14ef30d3bc);
+}
+
+.suggest_item-img9 {
+    background-image: url(https://down-vn.img.susercontent.com/file/vn-50009109-e57e5795819280a6535cee14ef30d3bc);
+}
+
+
+.suggest_item-sale-voucher9 {
+    background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lgb0gln7onsa97_tn);
+}
+
+.suggest_item-img10 {
+    background-image: url(https://down-vn.img.susercontent.com/file/vn-11134211-7qukw-lgiuyacz8okqae_tn);
+}
+
+
+.suggest_item-sale-voucher10 {
+    background-image: url(https://down-vn.img.susercontent.com/file/vn-11134211-7qukw-lgiuyacz8okqae_tn);
+}
+
+.suggest_item-img11 {
+    background-image: url(https://down-vn.img.susercontent.com/file/vn-11134201-23030-v4oqrn8jb8nv44_tn);
+}
+
+
+.suggest_item-sale-voucher11 {
+    background-image: url(https://down-vn.img.susercontent.com/file/vn-50009109-772279f6bdc3f93d12e0999d5c387a06);
+}
+
+.suggest_item-img12 {
+    background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lgb0gln7onsa97_tn);
+}
+
+
+.suggest_item-sale-voucher12 {
+    background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lgb0gln7onsa97_tn);
 }
 
 .suggest_item-see_more-about {
@@ -999,9 +1120,9 @@
 .suggest_item-see_more {
     background-color: #fff;
     border: none;
-    min-width: 240px;
-    padding: 8px 12px;
-    font-size: 13px;
+    min-width: 300px;
+    padding: 12px;
+    font-size: 14px;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     margin: 30px 0;
@@ -1009,10 +1130,6 @@
 
 .suggest_item-see_more:hover {
     background-color: rgba(0,0,0,.02);
-}
-
-#footer {
-    height: 5000px;
 }
 
 
