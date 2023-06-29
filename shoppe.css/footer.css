@@ -1,9 +1,16 @@
-
+#footer {
+    height: 5000px;
+}
 
 .footer_wraper {
     background-color: var(--background-color);
     min-height: 500px;
+}
+
+.footer_content {
+    
     padding: 50px 0;
+    border-bottom: 2px solid #ccc;
 }
 
 
@@ -18,8 +25,26 @@
 .footer_content-indotruction-description {
     font-size: 12px;
     line-height: 16px;
+    margin-bottom: 14px;
 }
 
 .footer_content-indotruction-description span {
-    font-weight: 500;
+    font-weight: 600;
+}
+
+.footer_content-indotruction-description-ul a,
+.footer_content-indotruction-description a {
+    color: #000;
+    font-weight: 600;
+}
+
+.footer_content-indotruction-description-ul {
+    padding-left: 40px ;
+    color: var(--text-color);
+}
+
+
+.footer_content-indotruction-description.outstanding_brand a {
+    font-weight: 400;
+    font-size: 13px;
 }
