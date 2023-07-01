@@ -390,6 +390,13 @@
          flex: 0 0 16.66667%;
          max-width: 16.66667%;
     }
+
+    .l-5-col {
+        /* occupies 20% of the base 12 columns for PC
+        flex: short hand by flex-grow, flex-shrink, flex-basis */
+       flex: 0 0 20%; 
+       max-width: 20%;
+    }
     
     
     .l-3 {
